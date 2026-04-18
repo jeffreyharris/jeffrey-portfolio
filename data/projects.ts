@@ -76,4 +76,32 @@ export const projects: Project[] = [
     liveUrl: "https://fsga.org",
     image: "/images/FSGA-Home.png",
   },
+  {
+  slug: "world-pork-expo",
+  title: "World Pork Expo",
+  platform: "WordPress",
+  category: "Event + Registration Website",
+  summary:
+    "Built a responsive WordPress marketing site supporting paid tradeshow registration for attendees and exhibitors.",
+  tech: ["WordPress", "WPBakery", "HTML", "CSS", "JavaScript"],
+  role:
+    "Worked as the front-end developer on a WordPress implementation, building page layouts and supporting registration-related site functionality.",
+  outcome:
+    "Launched a responsive redesign, managed registration forms, and tested payment gateway functionality to help ensure a reliable registration experience.",
+  image: "/images/world-pork-expo.png",
+},
+{
+  slug: "bluepearl-vet",
+  title: "BluePearl Vet",
+  platform: "WordPress",
+  category: "Landing Pages + Content Modules",
+  summary:
+    "Built WordPress landing pages and reusable content modules to support publishing flexibility and content management.",
+  tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript"],
+  role:
+    "Worked as a WordPress developer creating landing pages, custom page work, and reusable content structures.",
+  outcome:
+    "Improved the publishing workflow by giving content teams more flexible, reusable page-building options.",
+  image: "/images/bluepearl-vet.png",
+},
 ];

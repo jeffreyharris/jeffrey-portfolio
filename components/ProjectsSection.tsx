@@ -4,9 +4,9 @@ import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
-type FilterValue = "All" | "Sitefinity" | "NopCommerce";
+type FilterValue = "All" | "WordPress" | "Sitefinity" | "NopCommerce";
 
-const filters: FilterValue[] = ["All", "Sitefinity", "NopCommerce"];
+const filters: FilterValue[] = ["All", "WordPress", "Sitefinity", "NopCommerce"];
 
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("All");

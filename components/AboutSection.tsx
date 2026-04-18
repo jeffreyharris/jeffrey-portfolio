@@ -1,10 +1,7 @@
 export default function AboutSection() {
   return (
-    <section
-      id="about"
-      className="mx-auto max-w-6xl px-6 py-16 lg:px-8"
-    >
-      <div className="grid gap-10 lg:grid-cols-2">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+      <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
         <div>
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             About
@@ -31,9 +28,8 @@ export default function AboutSection() {
 
           <p>
             I’m currently expanding my modern front-end skillset through hands-on
-            development with React, Next.js, TypeScript, and Tailwind CSS—
-            building real projects while continuing to deliver strong UX and
-            business-focused solutions.
+            development with React, Next.js, TypeScript, and Tailwind CSS while
+            continuing to deliver strong UX and business-focused solutions.
           </p>
         </div>
       </div>

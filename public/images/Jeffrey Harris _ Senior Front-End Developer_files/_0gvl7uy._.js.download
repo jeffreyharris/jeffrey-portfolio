@@ -1,0 +1,403 @@
+(globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/components/ProjectCard.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ProjectCard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+;
+;
+;
+function ProjectCard({ slug, title, platform, category, summary, tech, image }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+        className: "group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition hover:border-white/20 hover:bg-white/[0.05]",
+        children: [
+            image && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative aspect-[16/9] w-full",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: image,
+                    alt: title,
+                    fill: true,
+                    className: "object-cover transition duration-500 group-hover:scale-105"
+                }, void 0, false, {
+                    fileName: "[project]/components/ProjectCard.tsx",
+                    lineNumber: 20,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/ProjectCard.tsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "p-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap items-center justify-between gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs uppercase tracking-[0.22em] text-white/40",
+                                        children: category
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ProjectCard.tsx",
+                                        lineNumber: 32,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "mt-2 text-xl font-semibold",
+                                        children: title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ProjectCard.tsx",
+                                        lineNumber: 35,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ProjectCard.tsx",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.15em] text-white/50",
+                                children: platform
+                            }, void 0, false, {
+                                fileName: "[project]/components/ProjectCard.tsx",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ProjectCard.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 leading-7 text-white/70",
+                        children: summary
+                    }, void 0, false, {
+                        fileName: "[project]/components/ProjectCard.tsx",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-5 flex flex-wrap gap-2",
+                        children: tech.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "rounded-full bg-white/10 px-3 py-1 text-xs text-white/70",
+                                children: item
+                            }, item, false, {
+                                fileName: "[project]/components/ProjectCard.tsx",
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/ProjectCard.tsx",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-6",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: `/projects/${slug}`,
+                            className: "text-sm text-white/50 transition hover:text-white/80",
+                            children: "View project →"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ProjectCard.tsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/ProjectCard.tsx",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ProjectCard.tsx",
+                lineNumber: 29,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ProjectCard.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+    }, this);
+}
+_c = ProjectCard;
+var _c;
+__turbopack_context__.k.register(_c, "ProjectCard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/data/projects.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "projects",
+    ()=>projects
+]);
+const projects = [
+    {
+        slug: "lcs-living",
+        title: "LCS Living",
+        platform: "Sitefinity",
+        category: "CMS Platform Build",
+        summary: "Built and integrated front-end templates, pages, and reusable components for a responsive Sitefinity platform with dynamic navigation supporting two distinct business areas.",
+        tech: [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript",
+            ".NET Core"
+        ],
+        role: "Built and integrated front-end templates, pages, and reusable components within a Sitefinity and .NET Core implementation.",
+        outcome: "Delivered a responsive Sitefinity website with dynamic navigation supporting both LCS Living and Group Purchasing as distinct site experiences.",
+        liveUrl: "https://www.lcsliving.com/",
+        image: "/images/lcs-Home.png"
+    },
+    {
+        slug: "american-integrity-insurance",
+        title: "American Integrity Insurance",
+        platform: "Sitefinity",
+        category: "Enterprise Website",
+        summary: "Developed responsive templates, pages, and components for a new enterprise site that included a gated section supporting multiple audiences.",
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            ".NET Core"
+        ],
+        role: "Built and integrated front-end templates, pages, and components for a responsive Sitefinity implementation.",
+        outcome: "Launched a new responsive website with a gated section for agents while supporting multiple user groups across the business.",
+        liveUrl: "https://www.aii.com/",
+        image: "/images/American-Integrity-Home.png"
+    },
+    {
+        slug: "store-space",
+        title: "Store Space",
+        platform: "Sitefinity",
+        category: "Marketing Website",
+        summary: "Delivered front-end templates and content components for a responsive marketing-focused Sitefinity experience built for scalability and usability.",
+        tech: [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript"
+        ],
+        role: "Built and integrated front-end templates, pages, and content components for a marketing-focused Sitefinity site.",
+        outcome: "Delivered a scalable responsive website experience designed to support content flexibility and a strong marketing presentation.",
+        liveUrl: "https://www.storespace.com/",
+        image: "/images/Store-Space-Home.png"
+    },
+    {
+        slug: "electron-microscopy-sciences",
+        title: "Electron Microscopy Sciences",
+        platform: "NopCommerce",
+        category: "E-commerce Build",
+        summary: "Built and integrated a custom front-end theme for a responsive e-commerce experience supporting scientific product discovery and purchasing.",
+        tech: [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JavaScript",
+            "C#"
+        ],
+        role: "Built and integrated the custom front-end theme for a NopCommerce implementation based on the approved design.",
+        outcome: "Delivered a responsive e-commerce experience supporting product discovery and purchasing for specialized scientific tools and supplies.",
+        liveUrl: "https://www.emsdiasum.com/",
+        image: "/images/Electron-Microscopy-Home.png"
+    },
+    {
+        slug: "florida-state-golf-association",
+        title: "Florida State Golf Association",
+        platform: "NopCommerce",
+        category: "Event + Commerce Platform",
+        summary: "Developed a responsive e-commerce and event experience with tournament registration flows and API-powered tournament data views.",
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "API"
+        ],
+        role: "Built and integrated the front-end theme and user experience for tournament registration and related event features.",
+        outcome: "Created a responsive event and commerce experience with API-powered tournament data views and registration workflows.",
+        liveUrl: "https://fsga.org",
+        image: "/images/FSGA-Home.png"
+    },
+    {
+        slug: "world-pork-expo",
+        title: "World Pork Expo",
+        platform: "WordPress",
+        category: "Event + Registration Website",
+        summary: "Built a responsive WordPress marketing site supporting paid tradeshow registration for attendees and exhibitors.",
+        tech: [
+            "WordPress",
+            "WPBakery",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        role: "Worked as the front-end developer on a WordPress implementation, building page layouts and supporting registration-related site functionality.",
+        outcome: "Launched a responsive redesign, managed registration forms, and tested payment gateway functionality to help ensure a reliable registration experience.",
+        image: "/images/world-pork-expo.png"
+    },
+    {
+        slug: "bluepearl-vet",
+        title: "BluePearl Vet",
+        platform: "WordPress",
+        category: "Landing Pages + Content Modules",
+        summary: "Built WordPress landing pages and reusable content modules to support publishing flexibility and content management.",
+        tech: [
+            "WordPress",
+            "ACF",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        role: "Worked as a WordPress developer creating landing pages, custom page work, and reusable content structures.",
+        outcome: "Improved the publishing workflow by giving content teams more flexible, reusable page-building options.",
+        image: "/images/bluepearl-vet.png"
+    }
+];
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/ProjectsSection.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ProjectsSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ProjectCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ProjectCard.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/projects.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+const filters = [
+    "All",
+    "Sitefinity",
+    "NopCommerce"
+];
+function ProjectsSection() {
+    _s();
+    const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All");
+    const filteredProjects = activeFilter === "All" ? __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["projects"] : __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["projects"].filter((project)=>project.platform === activeFilter);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "projects",
+        className: "mx-auto max-w-6xl px-6 py-16 lg:px-8",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm uppercase tracking-[0.25em] text-white/50",
+                                children: "Featured Projects"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ProjectsSection.tsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "mt-3 text-3xl font-semibold",
+                                children: "Selected work across CMS and e-commerce platforms."
+                            }, void 0, false, {
+                                fileName: "[project]/components/ProjectsSection.tsx",
+                                lineNumber: 26,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ProjectsSection.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "max-w-xl text-sm leading-7 text-white/60",
+                        children: "A sample of production work focused on responsive interfaces, maintainable front-end implementation, and business-driven digital experiences."
+                    }, void 0, false, {
+                        fileName: "[project]/components/ProjectsSection.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ProjectsSection.tsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-8 flex flex-wrap gap-3",
+                children: filters.map((filter)=>{
+                    const isActive = activeFilter === filter;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>setActiveFilter(filter),
+                        className: `rounded-full px-4 py-2 text-sm transition ${isActive ? "bg-white text-black" : "border border-white/15 text-white/70 hover:border-white/35 hover:bg-white/5"}`,
+                        children: filter
+                    }, filter, false, {
+                        fileName: "[project]/components/ProjectsSection.tsx",
+                        lineNumber: 43,
+                        columnNumber: 13
+                    }, this);
+                })
+            }, void 0, false, {
+                fileName: "[project]/components/ProjectsSection.tsx",
+                lineNumber: 38,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-10 grid gap-6 md:grid-cols-2",
+                children: filteredProjects.map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ProjectCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        slug: project.slug,
+                        title: project.title,
+                        platform: project.platform,
+                        category: project.category,
+                        summary: project.summary,
+                        tech: project.tech,
+                        role: project.role,
+                        outcome: project.outcome,
+                        image: project.image
+                    }, project.slug, false, {
+                        fileName: "[project]/components/ProjectsSection.tsx",
+                        lineNumber: 61,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/components/ProjectsSection.tsx",
+                lineNumber: 59,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ProjectsSection.tsx",
+        lineNumber: 20,
+        columnNumber: 5
+    }, this);
+}
+_s(ProjectsSection, "AZRvGA5qNeOgBNoKkTmonibR1jE=");
+_c = ProjectsSection;
+var _c;
+__turbopack_context__.k.register(_c, "ProjectsSection");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_0gvl7uy._.js.map

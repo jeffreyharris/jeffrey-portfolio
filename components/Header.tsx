@@ -1,10 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 40);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
@@ -14,10 +26,26 @@ export default function Header() {
           className="group"
           onClick={() => setMenuOpen(false)}
         >
-          <p className="text-white text-lg font-semibold tracking-wide">Jeffrey Harris</p>
-          <p className="text-sm text-white/55 transition group-hover:text-white/75">
-            Senior Front-End Developer
-          </p>
+          <div className="flex items-center gap-4">
+  <Image
+    src="/logo.svg"
+    alt="Jeffrey Harris Logo"
+    width={scrolled ? 55 : 150}
+  height={scrolled ? 55 : 150}
+  className="transition-all duration-300"
+  priority
+  />
+
+  <div className="block">
+    <p className="text-lg font-semibold tracking-wide">
+      Jeff Harris
+    </p>
+    <p className="text-sm text-white/55 transition group-hover:text-white/75">
+      Front-End Developer
+    </p>
+  </div>
+</div>
+          
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">

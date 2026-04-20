@@ -90,7 +90,6 @@ export const projects: Project[] = [
     liveUrl: "https://www.storespace.com/",
     image: "/images/Store-Space-Home.png",
   },
-  ,
   {
     slug: "walker-consultants",
     title: "Walker Consultants",

@@ -102,7 +102,7 @@ export const projects: Project[] = [
       "Implemented new Salient theme and ported over all custom widgets and functionality from the original build.",
     outcome:
       "Launched the redesigned marketing site with improved user experience, design, and performance while maintaining existing content modules and templates.",
-    image: "/images/walker-consultants.png",
+    image: "/images/Walker-Consultants.png",
   },
   {
     slug: "world-pork-expo",

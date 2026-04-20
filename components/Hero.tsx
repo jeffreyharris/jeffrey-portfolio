@@ -42,12 +42,17 @@ export default function Hero() {
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {[
               "WordPress Development",
+              "Sitefinity Development",
+              "NopCommerce Development",
               "CMS Implementations",
+              "HTML/CSS/SASS",
               "JavaScript Front-End",
               "Responsive UI",
               "Component-Based Development",
               "E-commerce Solutions",
               "React / Next.js",
+              "ADA Compliance",
+              "Web Production & Optimization",
               "Client Collaboration",
             ].map((item) => (
               <div

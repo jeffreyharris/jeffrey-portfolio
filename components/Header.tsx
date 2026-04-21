@@ -6,46 +6,56 @@ import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 40);
-  };
+    const handleScroll = () => {
+      const y = window.scrollY;
 
-  window.addEventListener("scroll", handleScroll);
+      setScrolled((prev) => {
+        if (!prev && y > 60) return true;
+        if (prev && y < 20) return false;
+        return prev;
+      });
+    };
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
-        <Link
-          href="/"
-          className="group"
-          onClick={() => setMenuOpen(false)}
-        >
+      <div
+        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-all duration-300 lg:px-8 ${
+          scrolled ? "py-2" : "py-5"
+        }`}
+      >
+        <Link href="/" className="group" onClick={() => setMenuOpen(false)}>
           <div className="flex items-center gap-4">
-  <Image
-    src="/logo.svg"
-    alt="Jeffrey Harris Logo"
-    width={scrolled ? 55 : 150}
-  height={scrolled ? 55 : 150}
-  className="transition-all duration-300"
-  priority
-  />
+            <div
+              className={`overflow-hidden transition-all duration-300 ${
+                scrolled ? "w-[80px]" : "w-[150px]"
+              }`}
+            >
+              <Image
+                src="/logo.svg"
+                alt="Jeffrey Harris Logo"
+                width={150}
+                height={150}
+                className="h-auto w-full"
+                priority
+              />
+            </div>
 
-  <div className="block">
-    <p className="text-lg font-semibold tracking-wide">
-      Jeff Harris
-    </p>
-    <p className="text-sm text-white/55 transition group-hover:text-white/75">
-      Front-End Developer
-    </p>
-  </div>
-</div>
-          
+            <div className="block">
+              <p className="text-lg font-semibold tracking-wide">Jeff Harris</p>
+              <p className="text-sm text-white/55 transition group-hover:text-white/75">
+                Front-End Developer
+              </p>
+            </div>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">

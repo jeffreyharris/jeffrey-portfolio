@@ -28,6 +28,7 @@ export const projects: Project[] = [
       "Worked as a WordPress developer creating landing pages, custom page work, and reusable content structures.",
     outcome:
       "Improved the publishing workflow by giving content teams more flexible, reusable page-building options.",
+      liveUrl: "https://bluepearlvet.com/",
     image: "/images/bluepearl-vet.png",
   },
   {
@@ -102,6 +103,7 @@ export const projects: Project[] = [
       "Implemented new Salient theme and ported over all custom widgets and functionality from the original build.",
     outcome:
       "Launched the redesigned marketing site with improved user experience, design, and performance while maintaining existing content modules and templates.",
+          liveUrl: "https://www.walkerconsultants.com/",
     image: "/images/Walker-Consultants.png",
   },
   {
@@ -116,6 +118,7 @@ export const projects: Project[] = [
       "Worked as the front-end developer on a WordPress implementation, building page layouts and supporting registration-related site functionality.",
     outcome:
       "Launched a responsive redesign, managed registration forms, and tested payment gateway functionality to help ensure a reliable registration experience.",
+          liveUrl: "https://www.worldpork.org/",
     image: "/images/world-pork-expo.png",
   },
 ];

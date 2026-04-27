@@ -12,9 +12,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-            15+ years creating responsive, user-focused digital experiences across
-            WordPress, Sitefinity, NopCommerce, and modern front-end development
-            with React, Next.js, TypeScript, and Tailwind CSS.
+            15+ years creating responsive, user-focused digital experiences across WordPress, Sitefinity, NopCommerce, and other CMS-driven platforms, with growing experience in modern front-end tools including React, Next.js, TypeScript, and Tailwind CSS.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

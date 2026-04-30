@@ -12,11 +12,15 @@ export default function ProjectCard({
   summary,
   tech,
   image,
+  awardUrl,
+  awardLabel,
+  videoUrl,
+  videoLabel,
 }: ProjectCardProps) {
   return (
     <article className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition hover:border-white/20 hover:bg-white/[0.05]">
       {image && (
-        <div className="relative aspect-[16/9] w-full">
+        <div className="relative aspect-[16/9] w-full overflow-hidden">
           <Image
             src={image}
             alt={title}
@@ -41,6 +45,32 @@ export default function ProjectCard({
         </div>
 
         <p className="mt-4 leading-7 text-white/70">{summary}</p>
+
+        {(awardUrl || videoUrl) && (
+  <div className="mt-5 flex flex-wrap gap-3">
+    {awardUrl && (
+      <a
+        href={awardUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl bg-amber-400 px-4 py-2 text-xs font-medium leading-none text-neutral-950 transition hover:bg-amber-300"
+      >
+        {awardLabel || "Award recognition"}
+      </a>
+    )}
+
+    {videoUrl && (
+      <a
+        href={videoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-xs font-medium leading-none text-white/75 transition hover:border-white/35 hover:bg-white/10 hover:text-white"
+      >
+        {videoLabel || "Watch promo video"}
+      </a>
+    )}
+  </div>
+)}
 
         <div className="mt-5 flex flex-wrap gap-2">
           {tech.map((item) => (

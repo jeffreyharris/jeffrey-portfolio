@@ -59,16 +59,20 @@ export default function ProjectsSection() {
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {filteredProjects.map((project) => (
           <ProjectCard
-            key={project.slug}
-            slug={project.slug}
-            title={project.title}
-            platform={project.platform}
-            category={project.category}
-            summary={project.summary}
-            tech={project.tech}
-            role={project.role}
-            outcome={project.outcome}
-            image={project.image}
+             key={project.slug}
+  slug={project.slug}
+  title={project.title}
+  platform={project.platform}
+  category={project.category}
+  summary={project.summary}
+  tech={project.tech}
+  role={project.role}
+  outcome={project.outcome}
+  image={project.image}
+  awardUrl={project.awardUrl}
+  awardLabel={project.awardLabel}
+  videoUrl={project.videoUrl}
+  videoLabel={project.videoLabel}
           />
         ))}
       </div>

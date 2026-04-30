@@ -66,14 +66,37 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           ))}
         </div>
 
-        {(project.liveUrl || project.githubUrl) && (
+
+       {(project.awardUrl || project.videoUrl || project.liveUrl || project.githubUrl) && (
   <div className="mt-8 flex flex-wrap gap-4">
+    {project.awardUrl && (
+      <a
+        href={project.awardUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl bg-amber-400 px-4 py-2 text-sm font-medium leading-none text-neutral-950 transition hover:bg-amber-300"
+      >
+        {project.awardLabel || "Award recognition"}
+      </a>
+    )}
+
+    {project.videoUrl && (
+      <a
+        href={project.videoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl border border-red-400/40 bg-red-500/10 px-4 py-2 text-sm font-medium leading-none text-red-200 transition hover:border-red-300/60 hover:bg-red-500/20 hover:text-red-100"
+      >
+        {project.videoLabel || "Watch promo video"}
+      </a>
+    )}
+
     {project.liveUrl && (
       <a
         href={project.liveUrl}
         target="_blank"
-        rel="noreferrer"
-        className="rounded-2xl bg-white px-4 py-2 text-sm font-medium text-black"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl bg-white px-4 py-2 text-sm font-medium leading-none text-black transition hover:bg-white/85"
       >
         Visit Site
       </a>
@@ -83,8 +106,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <a
         href={project.githubUrl}
         target="_blank"
-        rel="noreferrer"
-        className="rounded-2xl border border-white/15 px-4 py-2 text-sm text-white"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-2xl border border-white/15 px-4 py-2 text-sm font-medium leading-none text-white transition hover:border-white/35 hover:bg-white/10"
       >
         View Code
       </a>

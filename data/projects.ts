@@ -12,7 +12,12 @@ export const projects: Project[] = [
     role:
       "Built and integrated front-end templates, pages, and components in the Sitefinity renderer for a responsive Sitefinity implementation.",
     outcome:
-      "Launched a new responsive website with a gated section for agents while supporting multiple user groups across the business.",
+      "Chosen by Progress as their Sitefinity Site of the Month in April 2026. Launched a new responsive website with a gated section for agents while supporting multiple user groups across the business.",
+    awardUrl:
+  "https://www.progress.com/sitefinity-cms/user-awards/american-integrity-insurance",
+awardLabel: "Progress Sitefinity Site of the Month",
+videoUrl: "https://www.youtube.com/watch?v=HRR1PEWG5Jo&t=1s",
+videoLabel: "Watch promo video",
     liveUrl: "https://www.aii.com/",
     image: "/images/American-Integrity-Home.png",
   },

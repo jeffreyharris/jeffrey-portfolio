@@ -46,7 +46,7 @@ export default function ProjectsSection() {
               onClick={() => setActiveFilter(filter)}
               className={`rounded-full px-4 py-2 text-sm transition ${
                 isActive
-                  ? "bg-white text-black"
+                  ? "bg-[#f59e0b] text-black"
                   : "border border-white/15 text-white/70 hover:border-white/35 hover:bg-white/5"
               }`}
             >

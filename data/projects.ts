@@ -126,4 +126,19 @@ videoLabel: "Watch promo video",
           liveUrl: "https://www.worldpork.org/",
     image: "/images/world-pork-expo.png",
   },
+  {
+    slug: "world-wildlife-fund",
+    title: "World Wildlife Fund",
+    platform: "Custom CMS",
+    category: "Site Relaunch & Custom Campaigns",
+    summary:
+      "Assisted in the relaunch of the WWF website and built custom campaign pages to support fundraising efforts, utilizing a custom CMS and responsive development techniques. I also diagnosed and fixed front end issues and implemented Google Analytics tracking to monitor campaign performance.",
+    tech: ["HTML", "CSS", "JavaScript","Google Analytics API"],
+    role:
+      "As a web producer and front-end developer, I contributed to the relaunch of the WWF website and built custom campaign pages to support fundraising efforts. During my time there I also led the implementation of a responsive layout for the ecommerce gift center.",
+    outcome:
+      "Coordinated with an external agency to launch the redesigned WWF website and created custom campaign pages like the 'Solar Quiz' that effectively supported fundraising efforts, while also implementing Google Analytics tracking to monitor campaign performance.",
+          liveUrl: "https://www.worldwildlife.org/pages/take-the-solar-quiz",
+    image: "/images/world-wildlife-fund.png",
+  },
 ];

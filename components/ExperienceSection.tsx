@@ -23,7 +23,7 @@ export default function ExperienceSection() {
           <div className="mt-6 space-y-4 text-sm leading-7 text-white/70">
             <p>
               Build and deploy web marketing solutions across CMS and e-commerce
-              platforms including Sitefinity, WordPress, and NopCommerce.
+              platforms including WordPress, Sitefinity, Sitecore, and NopCommerce.
             </p>
 
             <p>

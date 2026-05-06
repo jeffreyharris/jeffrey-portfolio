@@ -12,8 +12,8 @@ export default function PromoSection() {
       </h2>
 
       <p className="mt-3 max-w-2xl text-sm leading-7 text-white/70">
-        I build fast, responsive websites with Next.js, React, Tailwind CSS,
-        and CMS-friendly front-end architecture.
+        Want a site like this for your personal brand or business? I can build you a custom Next.js website with 
+        responsive layouts, interactive project sections, polished visuals, and contact forms that actually send leads to your inbox.
       </p>
     </div>
 

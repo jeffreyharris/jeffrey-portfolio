@@ -1,0 +1,29 @@
+export default function PromoSection() {
+  return (
+  <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
+  <div className="rounded-[2rem] border border-amber-400/20 bg-amber-400/[0.08] p-6 shadow-2xl shadow-amber-400/5 md:flex md:items-center md:justify-between md:gap-8">
+    <div>
+      <p className="text-sm font-medium uppercase tracking-[0.25em] text-amber-300/80">
+        Available for select projects
+      </p>
+
+      <h2 className="mt-3 text-2xl font-semibold text-white">
+        Need a polished marketing site or portfolio like this?
+      </h2>
+
+      <p className="mt-3 max-w-2xl text-sm leading-7 text-white/70">
+        I build fast, responsive websites with Next.js, React, Tailwind CSS,
+        and CMS-friendly front-end architecture.
+      </p>
+    </div>
+
+    <a
+      href="#contact"
+      className="mt-6 inline-flex rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-amber-300 md:mt-0"
+    >
+      Start a project
+    </a>
+  </div>
+</section>
+);
+}

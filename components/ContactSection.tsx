@@ -11,6 +11,7 @@ export default function ContactSection() {
 });
 
 const [submitted, setSubmitted] = useState(false);
+const [isSubmitting, setIsSubmitting] = useState(false);
 
 const [errors, setErrors] = useState({
   name: "",
@@ -65,6 +66,9 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     return;
   }
 
+  setIsSubmitting(true);
+  setSubmitted(false);
+
   try {
     const response = await fetch("/api/contact", {
       method: "POST",
@@ -75,8 +79,10 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to send message.");
-    }
+  const errorData = await response.json();
+  console.error("Contact form API error:", errorData);
+  throw new Error(errorData.error || "Failed to send message.");
+}
 
     setSubmitted(true);
 
@@ -94,6 +100,8 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   } catch (error) {
     console.error(error);
     setSubmitted(false);
+  } finally {
+    setIsSubmitting(false);
   }
 };
 
@@ -231,11 +239,12 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 </div>
 
             <button
-              type="submit"
-              className="w-fit rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-amber-300"
-            >
-              Send message
-            </button>
+  type="submit"
+  disabled={isSubmitting}
+  className="w-fit rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-60"
+>
+  {isSubmitting ? "Sending..." : "Send message"}
+</button>
 
             {submitted && (
               <p className="text-sm text-amber-300">

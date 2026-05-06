@@ -8,15 +8,15 @@ export default function AboutSection() {
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold">
-            Experienced front-end developer with a modern growth mindset.
+            Front-end developer with deep CMS experience and a modern, adaptable approach to building responsive websites.
           </h2>
         </div>
 
         <div className="space-y-6 text-white/70 leading-8">
           <p>
-            I’m a Senior Front-End Developer with 15+ years of experience
+            I’m a Front-End Developer with 15+ years of experience
             building responsive, user-focused websites and digital experiences
-            across WordPress, Sitefinity, NopCommerce, and custom web platforms.
+            across WordPress, Sitefinity, NopCommerce, and other custom web platforms.
           </p>
 
           <p>

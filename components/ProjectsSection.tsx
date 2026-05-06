@@ -10,11 +10,22 @@ const filters: FilterValue[] = ["All", "WordPress", "Sitefinity", "NopCommerce"]
 
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("All");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredProjects =
-    activeFilter === "All"
-      ? projects
-      : projects.filter((project) => project.platform === activeFilter);
+  const filteredProjects = projects.filter((project) => {
+    const matchesPlatform =
+      activeFilter === "All" || project.platform === activeFilter;
+
+    const search = searchTerm.toLowerCase();
+
+    const matchesSearch =
+      project.title.toLowerCase().includes(search) ||
+      project.summary.toLowerCase().includes(search) ||
+      project.category.toLowerCase().includes(search) ||
+      project.tech.some((item) => item.toLowerCase().includes(search));
+
+    return matchesPlatform && matchesSearch;
+  });
 
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
@@ -36,6 +47,20 @@ export default function ProjectsSection() {
       </div>
 
       <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mw-full flex-1">
+          <label htmlFor="project-search" className="sr-only">
+            Search projects
+          </label>
+
+          <input
+              id="project-search"
+              type="text"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+              placeholder="Search by project, tech, category..."
+              className="w-full rounded-full border border-white/15 bg-white/[0.03] px-5 py-3 text-sm text-white placeholder:text-white/40 outline-none transition focus:border-amber-400/70 focus:bg-white/[0.06] md:max-w-md"
+          />
+      </div>
         {filters.map((filter) => {
           const isActive = activeFilter === filter;
 

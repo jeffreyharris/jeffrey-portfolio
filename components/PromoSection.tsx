@@ -19,7 +19,7 @@ export default function PromoSection() {
 
     <a
       href="#contact"
-      className="mt-6 inline-flex rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-amber-300 md:mt-0"
+      className="rounded-2xl bg-[#f59e0b]  px-5 py-3 text-sm font-medium text-black transition hover:bg-white hover:text-black"
     >
       Start a project
     </a>

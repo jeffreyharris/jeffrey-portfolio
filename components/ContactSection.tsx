@@ -127,9 +127,12 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             <h2 className="mt-3 text-3xl font-semibold">Let’s connect.</h2>
 
             <p className="mt-4 max-w-2xl leading-8 text-white/70">
-              I’m open to front-end development, CMS, e-commerce, and modern web
-              opportunities. The best place to connect right now is LinkedIn or
-              GitHub.
+              Need help with a responsive marketing site, CMS build, or modern front-end project? 
+              Send me a message with this form.
+            </p>
+
+            <p className="mt-4 max-w-2xl leading-8 text-white/70">
+              You can also find me on LinkedIn or GitHub. Thanks for visiting my portfolio!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -137,7 +140,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                 href="https://www.linkedin.com/in/jeffreyharrisdotme"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-[#f59e0b] hover:text-black"
+                className="rounded-2xl border border-white/15 px-5 py-3 text-sm text-white transition hover:border-white/35 hover:bg-white/5"
               >
                 LinkedIn
               </a>
@@ -146,7 +149,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
                 href="https://github.com/jeffreyharris"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-2xl border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:bg-[#f59e0b] hover:text-black"
+                className="rounded-2xl border border-white/15 px-5 py-3 text-sm text-white transition hover:border-white/35 hover:bg-white/5"
               >
                 GitHub
               </a>
@@ -241,7 +244,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             <button
   type="submit"
   disabled={isSubmitting}
-  className="w-fit rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-60"
+  className="w-fit rounded-2xl bg-[#f59e0b] px-5 py-3 text-sm font-medium text-black transition hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-60"
 >
   {isSubmitting ? "Sending..." : "Send message"}
 </button>

@@ -83,7 +83,7 @@ export default function Header() {
             href="https://github.com/jeffreyharris"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-white/15 px-4 py-2 transition hover:border-white/35 hover:bg-white/5"
+            className="rounded-2xl border border-white/15 px-4 py-2 transition hover:border-white/35 hover:bg-white/5"
           >
             GitHub
           </a>

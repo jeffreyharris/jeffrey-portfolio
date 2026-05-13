@@ -28,11 +28,18 @@ videoLabel: "Watch promo video",
     category: "Landing Pages + Content Modules",
     summary:
       "Built WordPress landing pages and reusable content modules to support publishing flexibility and content management.",
-    tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript", "PHP"],
+      detailSummary: [
+"Blue Pearl Vet came to us with a few of their WordPress sites that were in need of a refresh and then ultimately a full redesign. I began by implementing new UI/UX layouts and functionality into their existing sites while the new design was still in the works.",
+
+"Next, following the direction of their team combined with the input of our designers, we leveraged Advanced Custom Fields to add new data and flexibility to their services and location pages while also moving their site into a completely new brand and design.",
+
+"Following the successful launch, we continued collaborating with the client to optimize page speed, improve ADA scores, and refine their location and services pages to boost conversion."
+],
+tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript", "PHP"],
     role:
-      "Worked as a WordPress developer creating landing pages, custom page work, and reusable content structures.",
+      "Worked as a WordPress front-end developer collaboration with the client and out team to execute custom page work, new design implementation, and site optimizations.",
     outcome:
-      "Improved the publishing workflow by giving content teams more flexible, reusable page-building options.",
+      "Consolidated multiple sites into one, implemented a new brand guideline and design to the site, and improved the publishing workflow by giving content teams more flexible, reusable page-building options.",
       liveUrl: "https://bluepearlvet.com/",
     image: "/images/bluepearl-vet.png",
   },

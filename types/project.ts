@@ -4,6 +4,7 @@ export type Project = {
   platform: string;
   category: string;
   summary: string;
+  detailSummary: string[];
   tech: string[];
   role: string;
   outcome: string;
@@ -12,6 +13,6 @@ export type Project = {
   awardUrl?: string;
   awardLabel?: string;
   videoUrl?: string;
-videoLabel?: string;
+  videoLabel?: string;
   image?: string;
 };

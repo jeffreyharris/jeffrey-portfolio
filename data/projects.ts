@@ -8,7 +8,14 @@ export const projects: Project[] = [
     category: "Enterprise Website",
     summary:
       "Developed responsive templates, pages, and components for a new enterprise site that included a gated section supporting insurance agents.",
-    tech: ["HTML", "CSS", "JavaScript", "Razor", ".NET Core"],
+    detailSummary: [
+"After supporting American Integrity's older Sitefinity setup for a couple of years, they asked us for help with a interim reskin of their current site followed by a full rebuild and redesign on Sitefinity's latest .Net Core CMS platform.",
+
+"The rebuild project was conceptualized, scoped and carefully executed by cross collaborating teams over many months. The new platform is Sitefinity's new three-tier architecture that decouples the frontend (the Renderer) from the backend content management system (the CMS instance). This approach allows for greater flexibility, performance, and independent development cycles",
+
+"My role on this project included collaborating with the client on new feature requirements, creating responsive HTML/CSS builds from the designer’s Figma mockups, and integrating those designs into reusable components within Sitefinity’s renderer layer."
+],
+tech: ["HTML", "CSS", "JavaScript", "Razor", ".NET Core"],
     role:
       "Built and integrated front-end templates, pages, and components in the Sitefinity renderer for a responsive Sitefinity implementation.",
     outcome:

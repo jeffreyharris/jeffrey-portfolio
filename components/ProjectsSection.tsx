@@ -90,6 +90,7 @@ export default function ProjectsSection() {
   platform={project.platform}
   category={project.category}
   summary={project.summary}
+   detailSummary={project.tech}
   tech={project.tech}
   role={project.role}
   outcome={project.outcome}

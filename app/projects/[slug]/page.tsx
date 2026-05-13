@@ -199,12 +199,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       {promo.text}
     </p>
 
-    <a
+    <Link
       href="/#contact"
       className={`mt-6 inline-flex rounded-2xl px-5 py-3 text-sm font-medium transition ${promo.buttonClassName}`}
     >
       {promo.cta}
-    </a>
+    </Link>
   </div>
 </div>
 

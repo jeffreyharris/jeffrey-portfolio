@@ -4,7 +4,7 @@ export type Project = {
   platform: string;
   category: string;
   summary: string;
-  detailSummary: string[];
+  detailSummary?: string[];
   tech: string[];
   role: string;
   outcome: string;

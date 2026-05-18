@@ -57,13 +57,26 @@ tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript", "PHP"],
     category: "E-commerce Build",
     summary:
       "Built and integrated a custom front-end theme for a responsive e-commerce experience supporting scientific product discovery and purchasing.",
-    tech: ["HTML", "CSS", "SASS", "JavaScript", "Razor","C#"],
+    detailSummary: [
+  "Electron Microscopy Sciences is a comprehensive source of products for microscopy, laboratory research, and related scientific fields.",
+
+  "Their e-commerce site supports a large product catalog with detailed specifications, extensive categorization, and tools designed to help customers find highly specific products.",
+
+  "The challenge was creating a front-end experience that could support the breadth of their catalog while still feeling organized, engaging, and easy to use.",
+
+  "I helped translate the design direction into responsive front-end templates that balanced product discovery, clear categorization, strong imagery, and a smoother shopping experience.",
+
+  "For a specialized e-commerce site with a large catalog, responsive design, clear product presentation, and a reliable checkout flow are critical to helping EMS stand apart from competitors.",
+],
+tech: ["HTML", "CSS", "SASS", "JavaScript", "Razor","C#"],
     role:
       "Built and integrated the custom front-end theme for a NopCommerce implementation based on the approved design.",
     outcome:
       "Delivered a responsive e-commerce experience supporting product discovery and purchasing for specialized scientific tools and supplies.",
     liveUrl: "https://www.emsdiasum.com/",
     image: "/images/Electron-Microscopy-Home.png",
+    featureVideo: "/videos/ems-feature.mp4",
+    featureVideoLabel: "Sliders and Animations",
   },
   {
     slug: "florida-state-golf-association",
@@ -72,13 +85,26 @@ tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript", "PHP"],
     category: "Event + Commerce Platform",
     summary:
       "Developed a responsive e-commerce and event experience with tournament registration flows and API-powered tournament data views.",
-    tech: ["HTML", "CSS", "JavaScript", "Razor","C#"],
+    detailSummary: [
+  "FSGA needed a complete site replatform that could bring years of legacy content, membership data, tournament information, signup workflows, and e-commerce functionality into a modern website experience.",
+
+  "The project required careful front-end planning because the site needed to serve multiple user needs, from members browsing tournament information to visitors completing signup flows and purchasing items through the online shop.",
+
+  "While the back-end developers worked through the tournament API integration, I built a responsive scoreboard solution that displayed match data in a clean, easy-to-read format across desktop and mobile devices.",
+
+  "I translated approved Figma mockups into NopCommerce Razor views and recoded the NopCommerce shop experience so it aligned with the updated design direction.",
+
+  "During tournament signup periods, the site supports thousands of visitors in a single day, making front-end usability, performance, and responsive behavior critical to the organization.",
+],
+tech: ["HTML", "CSS", "JavaScript", "Razor","C#"],
     role:
       "Built and integrated the front-end theme and user experience for tournament registration and related event features.",
     outcome:
       "Created a responsive event and commerce experience with API-powered tournament data views and registration workflows.",
     liveUrl: "https://fsga.org",
     image: "/images/FSGA-Home.png",
+    featureVideo: "/videos/fsga-feature.mp4",
+    featureVideoLabel: "Tournament Scoreboard",
   },
   {
     slug: "lcs-living",
@@ -132,7 +158,18 @@ tech: ["WordPress", "ACF", "HTML", "CSS", "JavaScript", "PHP"],
     category: "Event + Registration Website",
     summary:
       "Built a responsive WordPress marketing site supporting paid tradeshow registration for attendees and exhibitors via Modern Events Calendar.",
-    tech: ["WordPress", "WPBakery", "HTML", "MEC", "CSS", "JavaScript","PHP"],
+    detailSummary: [
+  "The World Pork Expo is an annual trade show in Iowa that brings together attendees, exhibitors, and members of the press from across the pork industry.",
+
+  "The project required a refreshed WordPress website with a more colorful visual direction and a registration experience that supported multiple attendee types, exhibitor options, press registration, payments, and discount codes.",
+
+  "I used Modern Events Calendar and WPBakery to build a flexible registration flow with conditional form sections, optional fields, and payment gateway integration.",
+
+  "Because different users needed different registration paths, the front-end experience had to stay clear and easy to follow while still supporting complex form logic behind the scenes.",
+
+  "My work on the World Pork Expo site helped support smooth online registration for thousands of expo attendees across five consecutive years.",
+],
+tech: ["WordPress", "WPBakery", "HTML", "MEC", "CSS", "JavaScript","PHP"],
     role:
       "Worked as the front-end developer on a WordPress implementation, building page layouts and supporting registration-related site functionality.",
     outcome:

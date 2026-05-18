@@ -181,6 +181,34 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </div>
 
+
+{project.featureVideo && (
+  <div className="mt-12 rounded-[2rem] border border-white/10 bg-white/[0.03] p-4">
+    <div className="mb-4 px-2">
+      <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+        Feature Demo
+      </p>
+
+      <h2 className="mt-3 text-2xl font-semibold">
+        {project.featureVideoLabel || "Project feature walkthrough"}
+      </h2>
+    </div>
+
+    <div className="overflow-hidden rounded-[1.5rem] border border-white/10">
+      <video
+        className="aspect-video w-full bg-black object-cover"
+        controls
+        preload="metadata"
+        playsInline
+      >
+        <source src={project.featureVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+)}
+
+
         <div
   className={`relative mt-12 overflow-hidden rounded-[2rem] border p-8 lg:p-10 ${promo.className}`}
 >

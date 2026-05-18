@@ -14,5 +14,7 @@ export type Project = {
   awardLabel?: string;
   videoUrl?: string;
   videoLabel?: string;
+  featureVideo?: string;
+  featureVideoLabel?: string;
   image?: string;
 };

@@ -128,13 +128,24 @@ tech: ["HTML", "CSS", "JavaScript", "Razor","C#"],
     category: "Marketing Website",
     summary:
       "Delivered front-end templates and content components for a responsive marketing-focused Sitefinity experience built for scalability and usability.",
-    tech: ["HTML", "CSS", "SASS", "JavaScript", "Google Maps API", "Razor","C#"],
+    detailSummary: [
+  "Store Space was a complete redesign and Sitefinity replatform that functioned as both a marketing website and a rental application experience connected to their storage facility rental API.",
+
+  "The project required extensive form development to support the rental process, including user input, facility selection, availability details, and the steps needed to move visitors from interest to reservation.",
+
+  "Because the rental flow was a core business function, clear interactions, responsive behavior, validation, and error handling were especially important throughout the front-end experience.",
+
+  "I helped translate the new design direction into a modern Sitefinity .NET Core implementation that guided users from information gathering to storage rental in a clean, streamlined interface.",
+],
+tech: ["HTML", "CSS", "SASS", "JavaScript", "Google Maps API", "Razor","C#"],
     role:
       "Built and integrated front-end templates, pages, and content components for a marketing-focused Sitefinity site.",
     outcome:
       "Delivered a scalable responsive website experience designed to support content flexibility and a strong marketing presentation.",
     liveUrl: "https://www.storespace.com/",
     image: "/images/Store-Space-Home.png",
+     featureVideo: "/videos/storespace-feature.mp4",
+    featureVideoLabel: "Location Search and Rental Flow",
   },
   {
     slug: "walker-consultants",
@@ -143,13 +154,24 @@ tech: ["HTML", "CSS", "JavaScript", "Razor","C#"],
     category: "Marketing Website",
     summary:
       "Rebuilt this WordPress marketing site in Salient theme while keeping many custom content modules and templates intact, improving the user experience, design and performance.",
-    tech: ["WordPress", "WPBakery", "HTML", "MEC", "CSS", "JavaScript","PHP"],
+    detailSummary: [
+  "Walker Consultants was running on an outdated WordPress theme that was no longer well supported, making the site harder to maintain, update, and evolve over time.",
+
+  "The project required moving the website to a more modern WordPress setup while preserving the custom functionality and content patterns their team still relied on.",
+
+  "One of the main challenges was recreating the proprietary widgets from the old site so they could continue supporting the same business and content needs in the new build.",
+
+  "I migrated the site to the Salient theme and rebuilt the custom widget functionality within the new WordPress environment, helping deliver a more modern, responsive, and manageable website experience.",
+],
+tech: ["WordPress", "WPBakery", "HTML", "MEC", "CSS", "JavaScript","PHP"],
     role:
       "Implemented new Salient theme and ported over all custom widgets and functionality from the original build.",
     outcome:
       "Launched the redesigned marketing site with improved user experience, design, and performance while maintaining existing content modules and templates.",
           liveUrl: "https://www.walkerconsultants.com/",
     image: "/images/Walker-Consultants.png",
+    featureVideo: "/videos/walker-feature.mp4",
+    featureVideoLabel: "Modern Theme and Custom Widgets",
   },
   {
     slug: "world-pork-expo",
@@ -184,12 +206,25 @@ tech: ["WordPress", "WPBakery", "HTML", "MEC", "CSS", "JavaScript","PHP"],
     category: "Site Relaunch & Custom Campaigns",
     summary:
       "Assisted in the relaunch of the WWF website and built custom campaign pages to support fundraising efforts, utilizing a custom CMS and responsive development techniques. I also diagnosed and fixed front end issues and implemented Google Analytics tracking to monitor campaign performance.",
-    tech: ["HTML", "CSS", "JavaScript","Google Analytics API"],
+    detailSummary: [
+  "World Wildlife Fund needed ongoing front-end support during the relaunch of their website, along with custom campaign pages that supported fundraising, awareness, and donor engagement efforts.",
+
+  "I worked within a custom CMS environment to build responsive campaign pages and interactive website experiences that helped bring key initiatives to life for visitors across devices.",
+
+  "My work included translating design direction into front-end code, building custom page layouts, coding interactive elements, and ensuring the experience remained polished, accessible, and easy to navigate.",
+
+  "I also diagnosed and resolved front-end issues across the site, helping improve visual consistency, usability, and performance during and after the relaunch process.",
+
+  "To support campaign measurement, I implemented Google Analytics tracking so the team could monitor user behavior, evaluate campaign performance, and better understand how visitors engaged with fundraising content.",
+],
+tech: ["HTML", "CSS", "JavaScript","Google Analytics API"],
     role:
       "As a web producer and front-end developer, I contributed to the relaunch of the WWF website and built custom campaign pages to support fundraising efforts. During my time there I also led the implementation of a responsive layout for the ecommerce gift center.",
     outcome:
       "Coordinated with an external agency to launch the redesigned WWF website and created custom campaign pages like the 'Solar Quiz' that effectively supported fundraising efforts, while also implementing Google Analytics tracking to monitor campaign performance.",
           liveUrl: "https://www.worldwildlife.org/pages/take-the-solar-quiz",
     image: "/images/world-wildlife-fund.png",
+    featureVideo: "/videos/wwf-feature.mp4",
+    featureVideoLabel: "JavaScript Quiz Interactions",
   },
 ];

@@ -10,24 +10,23 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const y = window.scrollY;
-
-      setScrolled((prev) => {
-        if (!prev && y > 60) return true;
-        if (prev && y < 20) return false;
-        return prev;
-      });
+      setScrolled(window.scrollY > 80);
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-neutral-950/80 backdrop-blur">
+      <div
+        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-all duration-300 lg:px-8 ${
+          scrolled ? "py-2" : "py-5"
+        }`}
+      >
         <Link href="/" className="group" onClick={() => setMenuOpen(false)}>
           <div className="flex items-center gap-4">
             <div

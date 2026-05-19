@@ -7,7 +7,7 @@ const headline =
 
 export default function Hero() {
   return (
-    <section className="relative isolate  text-white">
+    <section className="relative isolate  text-white pt-48">
       {/* Warm moving gradient background */}
             <div className="pointer-events-none absolute left-1/2 top-1 -z-10 h-[420px] w-[1100px] max-w-[100vw] -translate-x-1/2 animate-hero-gradient bg-[radial-gradient(circle_at_30%_20%,rgba(245,158,11,0.20),transparent_35%),radial-gradient(circle_at_65%_15%,rgba(251,191,36,0.14),transparent_32%),radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.06),transparent_40%)]" />
       

@@ -1,3 +1,10 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const headline =
+  "Building modern websites with WordPress, CMS platforms, and JavaScript.";
+
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden text-white">
@@ -14,18 +21,50 @@ export default function Hero() {
               Senior Front-End Developer
             </p>
 
-            <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-              Building modern websites with WordPress, CMS platforms, and JavaScript.
-            </h1>
+            <motion.h1
+              className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                visible: {
+                  transition: {
+                    staggerChildren: 0.045,
+                  },
+                },
+              }}
+            >
+              {headline.split(" ").map((word, index) => (
+                <motion.span
+                  key={`${word}-${index}`}
+                  variants={{
+                    hidden: { opacity: 0, y: 18 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 0.45,
+                        ease: "easeOut",
+                      },
+                    },
+                  }}
+                  className="mr-3 inline-block"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </motion.h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              15+ years creating responsive, user-focused digital experiences across WordPress, Sitefinity, NopCommerce, and other CMS-driven platforms, with growing experience in modern front-end tools including React, Next.js, TypeScript, and Tailwind CSS.
+              15+ years creating responsive, user-focused digital experiences
+              across WordPress, Sitefinity, NopCommerce, and other CMS-driven
+              platforms, with growing experience in modern front-end tools
+              including React, Next.js, TypeScript, and Tailwind CSS.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="rounded-2xl bg-[#f59e0b]  px-5 py-3 text-sm font-medium text-black transition hover:bg-white hover:text-black"
+                className="rounded-2xl bg-[#f59e0b] px-5 py-3 text-sm font-medium text-black transition hover:bg-white hover:text-black"
               >
                 View Projects
               </a>

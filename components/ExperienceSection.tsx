@@ -1,3 +1,11 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const exHeadline =
+  "15+ years building responsive, CMS-driven digital experiences.";
+
+
 export default function ExperienceSection() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
@@ -6,9 +14,40 @@ export default function ExperienceSection() {
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Experience
           </p>
-          <h2 className="mt-3 text-3xl font-semibold">
-            15+ years building responsive, CMS-driven digital experiences.
-          </h2>
+          
+          <motion.h2
+            className="mt-3 text-3xl font-semibold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.04,
+                },
+              },
+            }}
+          >
+            {exHeadline.split(" ").map((word, index) => (
+              <motion.span
+                key={`${word}-${index}`}
+                variants={{
+                  hidden: { opacity: 0, y: 16 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.4,
+                      ease: "easeOut",
+                    },
+                  },
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h2>
         </div>
 
         <div className="space-y-5">

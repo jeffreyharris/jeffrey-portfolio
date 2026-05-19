@@ -1,8 +1,14 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { useState } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+
+const projectHeadline =
+  "Selected work across CMS and e-commerce platforms.";
+
 
 type FilterValue = "All" | "WordPress" | "Sitefinity" | "NopCommerce";
 
@@ -33,10 +39,40 @@ export default function ProjectsSection() {
         <div>
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Featured Projects
-          </p>
-          <h2 className="mt-3 text-3xl font-semibold">
-            Selected work across CMS and e-commerce platforms.
-          </h2>
+          </p>          
+          <motion.h2
+            className="mt-3 text-3xl font-semibold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.04,
+                },
+              },
+            }}
+          >
+            {projectHeadline.split(" ").map((word, index) => (
+              <motion.span
+                key={`${word}-${index}`}
+                variants={{
+                  hidden: { opacity: 0, y: 16 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.4,
+                      ease: "easeOut",
+                    },
+                  },
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h2>
         </div>
 
         <p className="max-w-xl text-sm leading-7 text-white/60">

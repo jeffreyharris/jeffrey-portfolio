@@ -1,3 +1,10 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const aboutHeadline =
+  "Front-end developer with deep CMS experience and a modern, adaptable approach to building responsive websites.";
+
 export default function AboutSection() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
@@ -7,16 +14,46 @@ export default function AboutSection() {
             About
           </p>
 
-          <h2 className="mt-4 text-3xl font-semibold">
-            Front-end developer with deep CMS experience and a modern, adaptable approach to building responsive websites.
-          </h2>
+          <motion.h2
+            className="mt-4 text-3xl font-semibold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.04,
+                },
+              },
+            }}
+          >
+            {aboutHeadline.split(" ").map((word, index) => (
+              <motion.span
+                key={`${word}-${index}`}
+                variants={{
+                  hidden: { opacity: 0, y: 16 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.4,
+                      ease: "easeOut",
+                    },
+                  },
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h2>
         </div>
 
         <div className="space-y-6 text-white/70 leading-8">
           <p>
-            I’m a Front-End Developer with 15+ years of experience
-            building responsive, user-focused websites and digital experiences
-            across WordPress, Sitefinity, NopCommerce, and other custom web platforms.
+            I’m a Front-End Developer with 15+ years of experience building
+            responsive, user-focused websites and digital experiences across
+            WordPress, Sitefinity, NopCommerce, and other custom web platforms.
           </p>
 
           <p>

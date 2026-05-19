@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProjectBySlug } from "@/lib/projects";
+import AnimatedProjectTitle from "@/components/AnimatedProjectTitle";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -78,7 +79,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {project.category}
         </p>
 
-        <h1 className="mt-4 text-4xl font-semibold">{project.title}</h1>
+        <AnimatedProjectTitle title={project.title} />
 
         <div className="mt-4 flex flex-wrap gap-3">
           <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.15em] text-white/60">

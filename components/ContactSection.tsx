@@ -1,6 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
+
+const contactHeadline =
+  "Let’s connect.";
+
 
 export default function ContactSection() {
 
@@ -124,7 +129,41 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
               Contact
             </p>
 
-            <h2 className="mt-3 text-3xl font-semibold">Let’s connect.</h2>
+            
+
+<motion.h2
+            className="mt-3 text-3xl font-semibold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.04,
+                },
+              },
+            }}
+          >
+            {contactHeadline.split(" ").map((word, index) => (
+              <motion.span
+                key={`${word}-${index}`}
+                variants={{
+                  hidden: { opacity: 0, y: 16 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.4,
+                      ease: "easeOut",
+                    },
+                  },
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h2>
 
             <p className="mt-4 max-w-2xl leading-8 text-white/70">
               Need help with a responsive marketing site, CMS build, or modern front-end project? 

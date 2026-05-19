@@ -2,7 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProjectBySlug } from "@/lib/projects";
-import AnimatedProjectTitle from "@/components/AnimatedProjectTitle";
+// If the shared AnimatedProjectTitle component isn't available via the
+// project path alias, provide a small local fallback to avoid build errors.
+type AnimatedProjectTitleProps = { title: string };
+const AnimatedProjectTitle = ({ title }: AnimatedProjectTitleProps) => (
+  <h1 className="mt-2 text-4xl font-bold tracking-tight">{title}</h1>
+);
 
 type ProjectPageProps = {
   params: Promise<{

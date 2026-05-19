@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Built with Next.js App Router, React, TypeScript, Tailwind CSS, Framer Motion, dynamic project routes, project filtering, and a server-side contact form API route.
+
 ## Getting Started
 
 First, run the development server:

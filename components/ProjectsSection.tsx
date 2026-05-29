@@ -10,9 +10,9 @@ const projectHeadline =
   "Selected work across CMS and e-commerce platforms.";
 
 
-type FilterValue = "All" | "WordPress" | "Sitefinity" | "NopCommerce";
+type FilterValue = "All" | "WordPress" | "Sitefinity" | "NopCommerce" | "Vue";
 
-const filters: FilterValue[] = ["All", "WordPress", "Sitefinity", "NopCommerce"];
+const filters: FilterValue[] = ["All", "WordPress", "Sitefinity", "NopCommerce", "Vue"];
 
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("All");

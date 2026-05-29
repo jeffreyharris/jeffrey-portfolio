@@ -148,6 +148,37 @@ tech: ["HTML", "CSS", "SASS", "JavaScript", "Google Maps API", "Razor","C#"],
     featureVideoLabel: "Location Search and Rental Flow",
   },
   {
+  slug: "st-pete-pint-guide",
+  title: "St. Pete Pint Guide",
+  platform: "Vue",
+  category: "Directory App",
+  summary:
+    "Built a modern directory-style web app for exploring St. Petersburg breweries, featuring structured data, reusable components, responsive layouts, and a clean user-focused interface.",
+  detailSummary: [
+    "St. Pete Pint Guide was built in 2020 as a personal Vue project focused on helping users explore breweries, taprooms, and beer options in the St. Pete / Tampa area.",
+
+    "I built the entire project myself, including the Vue application structure, Firebase database, Google Maps functionality, brewery detail pages, Untappd API integration, GitHub workflow, and Netlify deployment.",
+
+    "The site uses a Firebase database to manage brewery and location data, with the codebase maintained in GitHub and deployed through Netlify for a lightweight, modern front-end hosting workflow.",
+
+    "One of the key features of the project is its integration with the Untappd API, which pulls in beer information so users can browse beers that are actually on tap at participating locations and then and filter beers by type to narrow down what is currently available.",
+
+    "I also created the visual identity for the project, including designing and drawing the logo myself in Adobe Illustrator, and I took the photography used throughout the website.",
+
+    "This project took a significant amount of planning, problem-solving, and hands-on development. It remains a personal project I’m proud of because it combines Vue, Firebase, API integration, custom branding, photography, responsive design, and interactive directory-style functionality.",
+  ],
+  tech: ["Vue", "JavaScript", "Firebase", "Untappd API", "Google Maps API", "Netlify", "GitHub", "Photoshop", "Illustrator",
+],
+  role:
+  "Built the entire project as a personal Vue application, including the Firebase database, brewery directory, Google Maps integration, brewery detail pages, Untappd API powered beer listings, beer type filtering, responsive layouts, photography, logo design, GitHub workflow, and Netlify deployment.",
+
+outcome:
+  "Created a personal project I’m proud of that required a lot of hands-on problem-solving to combine Vue, Firebase, Google Maps, and the Untappd API into a useful brewery guide for exploring St. Petersburg locations and beers currently on tap.",
+  liveUrl: "https://www.stpetepintguide.org/",
+  githubUrl: "https://github.com/jeffreyharris/vue-sppg-project",
+  image: "/images/st-pete-pint-guide.png",
+},
+  {
     slug: "walker-consultants",
     title: "Walker Consultants",
     platform: "WordPress",

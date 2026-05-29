@@ -1,7 +1,7 @@
 export default function PromoSection() {
   return (
   <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
-  <div className="rounded-[2rem] border border-amber-400/20 bg-amber-400/[0.08] p-6 shadow-2xl shadow-amber-400/5 md:flex md:items-center md:justify-between md:gap-8">
+  <div className="rounded-[2rem] border border-amber-400/20 bg-black p-6 shadow-2xl shadow-amber-400/5 md:flex md:items-center md:justify-between md:gap-8">
     <div>
       <p className="text-sm font-medium uppercase tracking-[0.25em] text-amber-300/80">
         Available for select projects

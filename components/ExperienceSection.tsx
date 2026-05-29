@@ -11,7 +11,7 @@ export default function ExperienceSection() {
     <section id="experience" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
         <div>
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
             Experience
           </p>
           
@@ -51,7 +51,7 @@ export default function ExperienceSection() {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[2rem] border border-white/10 bg-black p-6">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h3 className="text-xl font-semibold">Spinutech</h3>
@@ -89,8 +89,8 @@ export default function ExperienceSection() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6">
-            <p className="text-sm uppercase tracking-[0.25em] text-white/40">
+          <div className="rounded-[2rem] border border-white/10 bg-black p-6">
+            <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
               Previous Roles
             </p>
 

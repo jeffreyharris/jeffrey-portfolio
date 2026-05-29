@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section id="about" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
         <div>
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
             About
           </p>
 
@@ -49,7 +49,7 @@ export default function AboutSection() {
           </motion.h2>
         </div>
 
-        <div className="space-y-6 text-white/70 leading-8">
+        <div className="space-y-6 text-white leading-8">
           <p>
             I’m a Front-End Developer with 15+ years of experience building
             responsive, user-focused websites and digital experiences across

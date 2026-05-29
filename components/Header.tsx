@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-neutral-950/80 backdrop-blur">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black">
       <div
         className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-all duration-300 lg:px-8 ${
           scrolled ? "py-2" : "py-5"

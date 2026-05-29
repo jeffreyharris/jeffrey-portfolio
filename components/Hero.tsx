@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="mx-auto max-w-6xl px-6 pb-20 lg:px-8 lg:pb-24 ">
         <div className="relative z-10 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
               Senior Front-End Developer
             </p>
 
@@ -54,7 +54,7 @@ export default function Hero() {
               ))}
             </motion.h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white">
               15+ years creating responsive, user-focused digital experiences
               across WordPress, Sitefinity, NopCommerce, and other CMS-driven
               platforms, with growing experience in modern front-end tools
@@ -78,8 +78,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-black/30 p-6 shadow-2xl shadow-black/30 backdrop-blur">
-            <p className="text-sm uppercase tracking-[0.22em] text-white/45">
+          <div className="rounded-[2rem] border border-white/10 bg-black p-6 shadow-2xl shadow-black/30">
+            <p className="text-sm uppercase tracking-[0.22em] text-[#f59e0b]">
               Core Focus
             </p>
 
@@ -101,7 +101,7 @@ export default function Hero() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-white/10 bg-black/50 px-4 py-3 text-sm text-white/80"
+                  className="rounded-2xl border border-white/10 bg-black px-4 py-3 text-sm text-white"
                 >
                   {item}
                 </div>

@@ -119,13 +119,13 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-full bg-gradient-to-t from-neutral-950 via-neutral-950/25 to-transparent" />
 
     <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-      <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 shadow-2xl shadow-[#f59e0b]/10 lg:p-10">
+      <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 bg-black p-8 shadow-2xl shadow-[#f59e0b]/10 lg:p-10">
         {/* Subtle orange edge glow */}
         <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_85%_100%,rgba(245,158,11,0.18),transparent_38%)]" />
 
         <div className="relative z-10 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
               Contact
             </p>
 
@@ -210,7 +210,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     placeholder="Your name"
     aria-invalid={Boolean(errors.name)}
     aria-describedby={errors.name ? "name-error" : undefined}
-    className={`rounded-2xl border bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-white/[0.06] ${
+    className={`rounded-2xl border bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-neutral-950 ${
       errors.name
         ? "border-red-400/70 focus:border-red-400"
         : "border-white/10 focus:border-amber-400/70"
@@ -238,7 +238,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     placeholder="you@example.com"
     aria-invalid={Boolean(errors.email)}
     aria-describedby={errors.email ? "email-error" : undefined}
-    className={`rounded-2xl border bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-white/[0.06] ${
+    className={`rounded-2xl border bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-neutral-950 ${
       errors.email
         ? "border-red-400/70 focus:border-red-400"
         : "border-white/10 focus:border-amber-400/70"
@@ -266,7 +266,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     rows={5}
     aria-invalid={Boolean(errors.message)}
     aria-describedby={errors.message ? "message-error" : undefined}
-    className={`resize-none rounded-2xl border bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-white/[0.06] ${
+    className={`resize-none rounded-2xl border bg-black px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:bg-neutral-950 ${
       errors.message
         ? "border-red-400/70 focus:border-red-400"
         : "border-white/10 focus:border-amber-400/70"

@@ -7,7 +7,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="pt-28 min-h-screen bg-neutral-950 text-white">
+    <main className="relative z-10 min-h-screen bg-transparent pt-28 text-white">
     
       <Hero />
       <AboutSection />

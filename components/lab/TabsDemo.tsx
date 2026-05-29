@@ -26,7 +26,7 @@ export default function TabsDemo() {
   const selectedTab = tabs.find((tab) => tab.label === activeTab);
 
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+    <div className="rounded-3xl border border-white/10 bg-black p-6">
       <div className="flex flex-wrap gap-3">
         {tabs.map((tab) => (
           <button
@@ -44,7 +44,7 @@ export default function TabsDemo() {
         ))}
       </div>
 
-      <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-5">
+      <div className="mt-6 rounded-2xl border border-white/10 bg-black p-5">
         <h3 className="text-xl font-semibold">{selectedTab?.label}</h3>
         <p className="mt-3 leading-7 text-white/70">{selectedTab?.content}</p>
       </div>

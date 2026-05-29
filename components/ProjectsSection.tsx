@@ -37,7 +37,7 @@ export default function ProjectsSection() {
     <section id="projects" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+          <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
             Featured Projects
           </p>          
           <motion.h2
@@ -75,7 +75,7 @@ export default function ProjectsSection() {
           </motion.h2>
         </div>
 
-        <p className="max-w-xl text-sm leading-7 text-white/60">
+        <p className="max-w-xl text-sm leading-7 text-white">
           A sample of production work focused on responsive interfaces,
           maintainable front-end implementation, and business-driven digital
           experiences.
@@ -94,7 +94,7 @@ export default function ProjectsSection() {
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
               placeholder="Search by project, tech, category..."
-              className="w-full rounded-full border border-white/15 bg-white/[0.03] px-5 py-3 text-sm text-white placeholder:text-white/40 outline-none transition focus:border-amber-400/70 focus:bg-white/[0.06] md:max-w-md"
+              className="w-full rounded-full border border-white/15 bg-black px-5 py-3 text-sm text-white placeholder:text-white/40 outline-none transition focus:border-amber-400/70 focus:bg-neutral-950 md:max-w-md"
           />
       </div>
         {filters.map((filter) => {
@@ -108,7 +108,7 @@ export default function ProjectsSection() {
               className={`rounded-full px-4 py-2 text-sm transition ${
                 isActive
                   ? "bg-[#f59e0b] text-black"
-                  : "border border-white/15 text-white/70 hover:border-white/35 hover:bg-white/5"
+                  : "border border-white/15 text-white bg-black hover:border-white/35 hover:bg-white/5"
               }`}
             >
               {filter}

@@ -22,7 +22,7 @@ const platformPromos = {
     text: "I build, update, and improve WordPress websites with responsive layouts, custom front-end work, Elementor support, and performance-minded execution.",
     cta: "Contact me about WordPress",
     className:
-      "border-sky-400/30 bg-sky-500/10 shadow-[0_0_60px_rgba(56,189,248,0.12)]",
+      "border-sky-400/30 bg-black shadow-[0_0_60px_rgba(56,189,248,0.12)]",
     buttonClassName:
       "bg-sky-300 text-neutral-950 hover:bg-white hover:text-black",
   },
@@ -32,7 +32,7 @@ const platformPromos = {
     text: "I help teams build polished, responsive Sitefinity experiences with CMS-friendly layouts, reusable front-end patterns, and marketing-focused page templates.",
     cta: "Contact me about Sitefinity",
     className:
-      "border-violet-400/30 bg-violet-500/10 shadow-[0_0_60px_rgba(167,139,250,0.12)]",
+      "border-violet-400/30 bg-black shadow-[0_0_60px_rgba(167,139,250,0.12)]",
     buttonClassName:
       "bg-violet-300 text-neutral-950 hover:bg-white hover:text-black",
   },
@@ -42,7 +42,7 @@ const platformPromos = {
     text: "I can help refine NopCommerce storefronts with responsive front-end updates, cleaner product experiences, and custom UI improvements.",
     cta: "Contact me about NopCommerce",
     className:
-      "border-emerald-400/30 bg-emerald-500/10 shadow-[0_0_60px_rgba(52,211,153,0.12)]",
+      "border-emerald-400/30 bg-black shadow-[0_0_60px_rgba(52,211,153,0.12)]",
     buttonClassName:
       "bg-emerald-300 text-neutral-950 hover:bg-white hover:text-black",
   },
@@ -65,7 +65,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     text: "I build responsive, polished websites with modern front-end tools, CMS-friendly structure, and clear calls to action.",
     cta: "Start a website project",
     className:
-      "border-amber-400/30 bg-amber-500/10 shadow-[0_0_60px_rgba(245,158,11,0.12)]",
+      "border-amber-400/30 bg-black shadow-[0_0_60px_rgba(245,158,11,0.12)]",
     buttonClassName:
       "bg-[#f59e0b] text-black hover:bg-white hover:text-black",
   };
@@ -81,7 +81,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
         <Link
           href="/#projects"
-          className="text-sm text-white/50 transition hover:text-white/80"
+          className="text-sm text-[#f59e0b] transition hover:text-white/80"
         >
           ← Back to projects
         </Link>
@@ -93,7 +93,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <AnimatedProjectTitle title={project.title} />
 
         <div className="mt-4 flex flex-wrap gap-3">
-          <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.15em] text-white/60">
+          <span className="rounded-full border bg-black border-white/10 px-3 py-1 text-xs uppercase tracking-[0.15em] text-white/60">
             {project.platform}
           </span>
         </div>
@@ -110,7 +110,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         )}
 
-        <div className="mt-8 text-lg leading-8 text-white/70">
+        <div className="mt-8 text-lg leading-8 text-white">
   {project.detailSummary?.length ? (
     project.detailSummary.map((paragraph) => (
       <p key={paragraph} className="mb-4 leading-8">
@@ -125,7 +125,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {project.tech.map((item) => (
             <span
               key={item}
-              className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70"
+              className="rounded-full bg-black px-3 py-1 text-xs text-white"
             >
               {item}
             </span>
@@ -182,12 +182,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 )}
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[2rem] border border-white/10 bg-black p-6">
             <h2 className="text-xl font-semibold">My Role</h2>
             <p className="mt-4 leading-8 text-white/70">{project.role}</p>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+          <div className="rounded-[2rem] border border-white/10 bg-black p-6">
             <h2 className="text-xl font-semibold">Outcome</h2>
             <p className="mt-4 leading-8 text-white/70">{project.outcome}</p>
           </div>
@@ -195,9 +195,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
 
 {project.featureVideo && (
-  <div className="mt-12 rounded-[2rem] border border-white/10 bg-white/[0.03] p-4">
+  <div className="mt-12 rounded-[2rem] border border-white/10 bg-black p-4">
     <div className="mb-4 px-2">
-      <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+      <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
         Feature Demo
       </p>
 
@@ -227,7 +227,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
 
   <div className="relative">
-    <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+    <p className="text-sm uppercase tracking-[0.25em] text-[#f59e0b]">
       {promo.eyebrow}
     </p>
 

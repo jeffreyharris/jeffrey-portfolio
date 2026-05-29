@@ -18,7 +18,7 @@ export default function ProjectCard({
   videoLabel,
 }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition hover:border-white/20 hover:bg-white/[0.05]">
+    <article className="group overflow-hidden rounded-[2rem] border border-white/10 bg-black transition hover:border-white/20">
       {image && (
         <div className="relative aspect-[16/9] w-full overflow-hidden">
           <Image
@@ -86,7 +86,7 @@ export default function ProjectCard({
         <div className="mt-6">
           <Link
             href={`/projects/${slug}`}
-            className="text-sm text-white/50 transition hover:text-white/80"
+            className="text-sm text-[#f59e0b] transition hover:text-white/80"
           >
             View project →
           </Link>

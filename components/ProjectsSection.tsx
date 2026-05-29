@@ -7,7 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
 const projectHeadline =
-  "Selected work across CMS and e-commerce platforms.";
+  "Selected work across CMS, JS, and e-commerce platforms.";
 
 
 type FilterValue = "All" | "WordPress" | "Sitefinity" | "NopCommerce" | "Vue";
